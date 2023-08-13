@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Histrical</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top opacity-75">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.jpg" class="w-50 logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0 m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">الصفحه الرئسيه</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الكتب
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#book">ابتدائي</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#book">اعدادي</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#book">ثانوي</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الملخصات
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">ابتدائي</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">اعدادي</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">ثانوي</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">اتصل بنا</a>
+                        </li>
+                        
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div id="slider" class="carousel slide " data-bs-ride="carousel">
+        
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+        
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="images/1.jpg" class="d-block  " >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-white lead">First slide label</h5>
+                            <p class="text-white lead">Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/2.jpg" class="d-block " >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/3.jpg" class="d-block ">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"  aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="book" id="book">
+        <div class="container">
+            <h1 class="text-center mb-5">تصفح أفضل المنتجات لدينا</h1>
+                
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="product-flters" class="bg-white">
+                            <li data-filter="*" class="filter-active">الكل</li>
+                            <li data-filter=".filter-app">ادوات مدسيه</li>
+                            <li data-filter=".filter-card">حقائب</li>
+                        </ul>
+                    </div>
+                </div><!-- nav bar-->
+                
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="card">
+                            <img src="images/4.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 1  -->
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/9.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 2  -->
+
+                    <div class="col-lg-3 ">
+                        <div class="card">
+                            <img src="images/6.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 3  -->
+                    
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/7.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 4  -->
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/4.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 1  -->
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/9.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 2  -->
+
+                    <div class="col-lg-3 ">
+                        <div class="card">
+                            <img src="images/6.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 3  -->
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/7.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 4  -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/4.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 1  -->
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/9.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 2  -->
+
+                    <div class="col-lg-3 ">
+                        <div class="card">
+                            <img src="images/6.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 3  -->
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/7.jpg" class="w-100 rounded-circle">
+                            <hr class="w-100 bg-dark">
+                            <div class="text-dark fs-3 text-center">
+                                <p>السعر: <span class="m-3">5 جنيهات</span></p>
+                            </div>
+                        </div>
+                    </div><!--- 4  -->
+
+                </div> <!-- row -->
+        </div>
+    </section>
+
+    <section class="content-us text-center text-white">
+        <div class="container">
+            <p class="lead fs-3 mb-5">إبدء الشراء عبر الإنترنت</p>
+            <h1 class="mb-5">سجل معنا للعمل في المكتبة و التحق بفريق من كبار العمال</h1>
+            <button class="btn btn-outline-light btn-lg">ابدأ الأن</button>
+        </div>
+    </section>
+
+    <section class="view">
+        <div class="container">
+            <h1 class="text-center mb-5">اراء عملائنا</h1>
+            <div class="card view-card p-5">
+                
+                <div id="sidelImg" class="carousel slide carousel-dark"  data-bs-ride="carousel">
+                    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#sidelImg" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#sidelImg" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#sidelImg" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#sidelImg" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#sidelImg" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#sidelImg" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#sidelImg" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#sidelImg" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img src="images/profile1.jpg">
+                            <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vitae, est asperiores vel quam at dolorum iusto pariatur ducimus tempore totam officia exercitationem deserunt, vero sint rem minus optio dolore?</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile2.jpg">
+                            <p class="w-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex ea iure sit hic commodi culpa, quae veniam inventore molestiae deserunt expedita quaerat quasi cum reprehenderit? Placeat consequuntur obcaecati iste!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile3.jpg">
+                            <p class="w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat ipsam soluta ea quae consequatur tenetur! Quam eos neque praesentium voluptates, quos delectus, ab perspiciatis dolorum eveniet nisi, optio aut!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile4.jpg">
+                            <p class="w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat ipsam soluta ea quae consequatur tenetur! Quam eos neque praesentium voluptates, quos delectus, ab perspiciatis dolorum eveniet nisi, optio aut!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile5.jpg">
+                            <p class="w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat ipsam soluta ea quae consequatur tenetur! Quam eos neque praesentium voluptates, quos delectus, ab perspiciatis dolorum eveniet nisi, optio aut!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile8.jpg">
+                            <p class="w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat ipsam soluta ea quae consequatur tenetur! Quam eos neque praesentium voluptates, quos delectus, ab perspiciatis dolorum eveniet nisi, optio aut!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile6.jpg">
+                            <p class="w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat ipsam soluta ea quae consequatur tenetur! Quam eos neque praesentium voluptates, quos delectus, ab perspiciatis dolorum eveniet nisi, optio aut!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile7.jpg">
+                            <p class="w-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat ipsam soluta ea quae consequatur tenetur! Quam eos neque praesentium voluptates, quos delectus, ab perspiciatis dolorum eveniet nisi, optio aut!</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sidelImg" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sidelImg" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark p-5">
+        <div class="row">
+            <div class="col-md-6 footer-control">
+                <h1>حمل & استمتع</h1>
+                <p>
+                    يمكنك الوصول إلى منتاجانتنا الخاصة بك في أي مكان
+                    وفي أي وقت والاستعداد من خلال الاشتراك علي المبيل ابلكيشن.
+                </p>
+                <button class="btn btn-outline-light btn-lg">
+                    <i class="fa-brands fa-apple w-100"></i>
+                    متجر ابل <br> احصل عليع الان
+                </button>
+                <button class="btn btn-outline-light btn-lg">
+                    <i class="fa-brands fa-google-play w-100"></i>
+                    متجر أندرويد <br>احصل عليه الان
+                </button>
+
+                <div class="icon col-sm-6">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-6 footer-img">
+                <img src="images/mobile.jpg" width="100%">
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

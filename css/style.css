@@ -1,0 +1,110 @@
+
+header{
+    min-height: 100vh;
+    background-position: center; 
+    padding-top: 100px;
+    /* border: 1px solid red; */
+}
+
+.book {
+    background-color: #f5f8fd;
+    padding-bottom: 50px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 600px;
+}
+
+#product-flters {
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+
+#product-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #272829;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#product-flters li:hover,
+#product-flters li.filter-active{
+    color:  #149ddd;
+}
+
+
+.content-us{
+    background: #475191;
+    padding: 40px;
+}
+
+.view{
+    background-color: rgba(255, 255, 255, 0.6) ;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+
+.view .carousel-item img{
+    width: 100px;
+    height:100px;
+    border-radius: 50px;
+}
+
+.view .carousel-item p{
+    margin: 50px auto;
+    color: #111;
+    text-align: center;
+    text-justify: auto;
+}
+
+.view .carousel-indicators button{
+    border-radius: 20px;
+    height: 8px;
+    margin-right: 10px;
+    width: 8px;
+}
+
+footer{
+    min-height : 50vh;
+
+}
+footer .footer-control h1 , footer .footer-control p {
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer .footer-control button{
+    margin: 50px 30px;
+}
+
+footer .footer-img img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+footer .footer-control  .icon{
+    margin: 0 170px;
+    color: #fff;
+}
+footer .footer-control  .icon a{
+    color: white;
+    margin: 0 5px;
+}
+
+footer .footer-control .icon i{
+    margin: 0 3px;
+}
